@@ -1,0 +1,39 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.posit {
+  background-size: cover;
+  border: 1px solid #eaeded;
+  height: 50vh;
+}
+
+#posit1 {
+  background-image: url("./img/postit1.png");
+}
+
+#posit2 {
+  background-image: url("./img/postit2.png");
+}
+
+#posit3 {
+  background-image: url("./img/postit3.png");
+}
+
+#posit4 {
+  background-image: url("./img/postit4.png");
+}
+
+#posit5 {
+  background-image: url("./img/postit5.png");
+}
+
+#posit6 {
+  background-image: url("./img/postit6.png");
+}
+
+#posit7 {
+  background-image: url("./img/postit7.png");
+}
