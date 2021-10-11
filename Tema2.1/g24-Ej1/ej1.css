@@ -1,0 +1,38 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.type1 > div > div {
+  height: 50%;
+}
+
+.type1 {
+  width: 100%;
+  height: 15%;
+  background-color: #ccd1d1;
+  border: 2px solid black;
+}
+
+.type2 {
+  width: 100%;
+  height: 7.5%;
+}
+
+.type1 > div,
+.type2 > div {
+  height: 100%;
+}
