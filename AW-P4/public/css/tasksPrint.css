@@ -1,0 +1,63 @@
+* {
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+#logo-img {
+  display:none;
+}
+
+#main-title {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+#user {
+  display: none;
+}
+
+#task-list {
+  font-size: 12px;
+}
+
+.task-pending-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.task-name:after {
+  content: ":";
+}
+
+.task-finished-info {
+  text-decoration: line-through;
+}
+
+.taskfinished-img {
+  display: none;
+}
+
+.tag-list {
+  list-style: none;
+  padding: 5px;
+}
+
+.tag-list li {
+  display: inline;
+}
+
+.tag-list li:before {
+  content: "(";
+}
+
+.tag-list li:after {
+  content: ")";
+}
+
+.task-button {
+  display: none;
+}
+
+#new-task {
+  display: none;
+}

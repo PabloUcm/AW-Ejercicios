@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gestor de tareas</title>
+    <link rel="icon" href="img/favicon.ico" type="image/ico" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../public/css/tasksScreen.css"
+    />
+    <link rel="stylesheet" media="print" href="../public/css/tasksPrint.css" />
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img
+          id="logo-img"
+          alt="Imagen logo"
+          height="100px"
+          width="100px"
+          src="../public/img/favicon.ico"
+        />
+        <h1 id="main-title">Tareas</h1>
+      </div>
+      <div id="user">
+        <img
+          id="user-img"
+          alt="Imagen usuario"
+          src="../public/img/user-icon.png"
+        />
+        <div id="user-info">
+          <p>usuario@gmail.com</p>
+          <a id="sign-out" href="#">Desconectar</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="task-section">
+        <div id="ring"></div>
+        <ul id="task-list">
+          <% tasks.forEach(task => { %> <% if (task.done) { %>
+          <li class="task-pending">
+            <div class="task-pending-info">
+              <h3 class="task-name"><%= task.text %></h3>
+              <ul class="tag-list">
+                <% task.tags.forEach(tag => { %>
+                <li><%= tag %></li>
+                <% }); %>
+              </ul>
+            </div>
+            <a class="task-button"></a>
+          </li>
+          <% } else { %>
+          <li class="task-finished">
+            <div class="task-finished-info">
+              <h3 class="task-name-finished"><%= task.text %></h3>
+            </div>
+            <img
+              class="taskfinished-img"
+              alt="Tarea completada"
+              width="110px"
+              heigth="90px"
+              src="../public/img/finishedtask.png"
+            />
+          </li>
+          <% } %> <% }); %>
+        </ul>
+      </div>
+      <div id="new-task">
+        <div id="posit-section">
+          <div id="posit">
+            <img width="280px" heigth="280px" src="../public/img/posit.png" />
+            <div id="posit-text">Práctica 1 AW</div>
+          </div>
+        </div>
+        <div id="new-posit-section">
+          <textarea
+            cols="25"
+            rows="2"
+            placeholder="Nueva Tarea"
+            maxlength="40"
+          ></textarea>
+          <div id="add">
+            <div id="add-button">+</div>
+          </div>
+        </div>
+        <div id="delete-task-section">
+          <a id="delete-button">ELIMINAR TAREAS COMPLETADAS</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
